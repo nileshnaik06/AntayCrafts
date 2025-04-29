@@ -62,28 +62,23 @@ function prods() {
   });
 }
 
-function basicFuncs() {
-  let openMenu = document.querySelector("#menu-open");
-  let closeMenu = document.querySelector("#menu-close");
-  let menu = document.querySelector("#menu");
-  let shop = document.querySelector("#btn");
-  
-  
-  openMenu.addEventListener('click', function () {
-    openMenu.style.display = 'none';
-    menu.classList.add('active');
-  });
-  
-  closeMenu.addEventListener('click', function () {
-    menu.classList.remove('active');
-    openMenu.style.display = 'flex';
-  });
-  
-  shop.addEventListener('click', function () {
-    window.location.href = '#products'
-  })
-  
-}
+let openMenu = document.querySelector("#menu-open");
+let closeMenu = document.querySelector("#menu-close");
+let menu = document.querySelector("#menu");
+let shop = document.querySelector("#btn");
 
-basicFuncs()
+
+openMenu.addEventListener('click', function () {
+  openMenu.style.display = 'none';
+  menu.classList.add('active');
+});
+
+closeMenu.addEventListener('click', function () {
+  menu.classList.remove('active');
+  openMenu.style.display = 'flex';
+});
+
+shop.addEventListener('click', function () {
+  window.location.href = '#products'
+})
 prods()
