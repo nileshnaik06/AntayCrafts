@@ -75,10 +75,10 @@ openMenu.addEventListener('click', function () {
 
 closeMenu.addEventListener('click', function () {
   menu.classList.remove('active');
-  openMenu.style.display = 'flex';
+  openMenu.style.display = 'block';
 });
 
 shop.addEventListener('click', function () {
   window.location.href = '#products'
 })
-prods()
+prods();
