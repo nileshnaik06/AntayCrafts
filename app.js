@@ -45,6 +45,14 @@ window.addEventListener("load", () => {
 });
 
 
+window.addEventListener('resize', () => {
+  const navMenu = document.querySelector('.nav-menu');
+  if (window.innerWidth > 1024) {
+    menu.classList.remove('active'); // or whatever class shows the menu
+  }
+});
+
+
 openMenu.addEventListener('click', () => {
   menu.classList.add('active');
 });

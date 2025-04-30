@@ -149,6 +149,7 @@
   
   #menu_nav li {
     width: 100%;
+    margin-top: 5vw;
     text-align: center;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -658,15 +659,15 @@
       padding: 0.22rem;
       border: 1.99px transparent;
       border-radius: 10px;
+      opacity: .5;
     }
   
     .desktop-nav li a:hover {
-      border: 1.99px solid goldenrod;
-      box-shadow: 1px 2px 4px #33333363;
+        opacity: .99;
     }
   
     #cta {
-      padding: 0.33rem 0.77rem;
+      padding: 0.22rem 0.44rem;
       border-radius: 10px;
       border: none;
       color: white;
@@ -675,7 +676,7 @@
     }
   
     #cta:hover {
-      transform: scale(1.05);
+      transform: scale(1.01);
       box-shadow: 2px 3px 5px #33333354;
     }
   
